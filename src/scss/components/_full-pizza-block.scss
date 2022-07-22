@@ -1,0 +1,60 @@
+.full-pizza-block {
+  display: flex;
+  gap: 40px;
+
+  &__left {
+    a {
+      display: block;
+      margin-bottom: 24px;
+
+      .go-back-btn {
+        display: flex;
+        align-items: center;
+        border: none;
+
+        svg {
+          margin-right: 8px;
+
+          path {
+            fill: none;
+            stroke: #fe5f1e;
+            stroke-width: 2;
+          }
+        }
+
+        &:hover {
+          .go-back-btn {
+            border: 1px solid;
+            svg {
+              path {
+                stroke: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  &__text {
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  &__title-size {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}

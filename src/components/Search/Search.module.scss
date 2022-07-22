@@ -1,0 +1,40 @@
+.root {
+  position: relative;
+  left: -100px;
+}
+
+.input {
+  width: 340px;
+  padding: 12px 20px 12px 43px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 16px;
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.svgSearch {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+  left: 14px;
+  top: 14px;
+}
+
+.svgClear {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+  right: 14px;
+  top: 14px;
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  cursor: pointer;
+}
