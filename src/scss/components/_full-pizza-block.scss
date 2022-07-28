@@ -2,6 +2,10 @@
   display: flex;
   gap: 40px;
 
+  @media (max-width: 720px) {
+    display: grid;
+  }
+
   &__left {
     a {
       display: block;
@@ -38,11 +42,24 @@
 
   img {
     object-fit: contain;
+
+    @media (max-width: 720px) {
+      display: block;
+      margin: auto;
+    }
+
+    @media (max-width: 360px) {
+      width: 100%;
+    }
   }
 
   &__text {
     p {
       margin-top: 30px;
+    }
+
+    @media (max-width: 720px) {
+      text-align: center;
     }
   }
 
@@ -53,8 +70,15 @@
 
   &__price {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+
+  .button {
+    @media (max-width: 820px) {
+      width: 100%;
+      max-width: 270px;
+    }
   }
 }
